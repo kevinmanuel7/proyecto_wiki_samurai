@@ -1,0 +1,87 @@
+.header-principal {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-centro img {
+    height: 200px;
+    width: auto;
+}
+
+.header-centro {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-izq {
+    display: flex;
+    align-items: center;
+}
+
+.header-der {
+    display: flex;
+    align-items: center;
+}
+
+.btn-menu {
+    background: none;
+    border: none;
+    font-size: 150%;
+    color: #2a2a2a;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn-menu:hover {
+    color: #c04122;
+}
+
+.form-busqueda {
+    display: flex;
+    align-items: center;
+}
+
+.form-busqueda input {
+    padding: 6px 12px;
+    height: 35px;
+    border: 3px;
+    border-radius: 3px solid #2a2a2a;
+    background-color: transparent;
+    color: #2a2a2a;
+    outline: none;
+}
+
+.form-busqueda button {
+    padding: 6px 12px;
+    height: 35px;
+    border: 3px solid #2a2a2a;
+    background-color: transparent;
+    color: #2a2a2a;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.form-busqueda button:hover {
+    color: #c0412b;
+}
+
+.form-busqueda svg {
+    display: block;
+}
+
+.menu-desplegable {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.menu-desplegable.visible {
+    max-height: 300px;
+    opacity: 1;
+}
